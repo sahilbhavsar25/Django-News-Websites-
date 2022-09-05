@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+
+{% block body %} 
+  
+<div class="container-fluid my-2 px-2">
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item" data-bs-interval="10000">
+        <img src="https://source.unsplash.com/1600x600/?,NEWS" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://source.unsplash.com/1600x600/?,WEATHER" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item active">
+        <img src="https://source.unsplash.com/1600x600/?,newspaper" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+  <div class="row my-2 px-5 , card-group">
+ 
+     <div class="card my-2 px-8 ,card-group" style="width: 19rem;">
+        <img src="https://source.unsplash.com/1600x600/?,newspaper" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>HEALTH NEWS</b></h5>
+        <p class="card-text">The latest breaking health news  and alert.</p>
+         <a href="/health.html" class="btn btn-primary">visit site</a>
+     </div>
+      </div>
+      <div class="card my-2 px-8, card-group" style="width: 19rem;">
+        <img src="https://source.unsplash.com/1600x600/?,entertainment" class="card-img-top" alt="...">
+      <div class="card-body">
+         <h5 class="card-title"><b>Entertainment News</b></h5>
+         <p class="card-text">The latest breaking entertainment news  and alert</p>
+         <a href="/entertainment.html" class="btn btn-primary">visit site</a>
+      </div>
+      </div>
+
+      <div class="card my-2 px-8 ,card-group" style="width: 19rem;">
+        <img src="https://source.unsplash.com/1600x600/?,sports" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><b>SPORTS NEWS</b></h5>
+        <p class="card-text">The latest breaking sports news  and alert</p>
+        <a href="/sports.html" class="btn btn-primary">visit site</a>
+      </div>
+      </div>
+
+      <div class="card my-2 px-8, card-group" style="width: 19rem;">
+        <img src="https://source.unsplash.com/1600x600/?,weather" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title"><b>WEATHER NEWS</b></h5>
+          <p class="card-text">The latest breaking weather news  and alert</p>
+          <a href="/weather.html" class="btn btn-primary">visit site</a>
+      </div>
+      </div>
+
+
+          <div class="card my-2 px-8 , card-group" style="width: 19rem;">
+            <img src="https://source.unsplash.com/1600x600/?,crime" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title"><b>LATEST CRIME NEWS</b></h5>
+              <p class="card-text">The latest breaking crime news  and alert.</p>
+              <a href="/crime.html" class="btn btn-primary">visit site</a>
+          </div>
+          </div>
+</div>
+
+
+
+{% endblock body %}

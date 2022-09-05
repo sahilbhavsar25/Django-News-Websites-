@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block  body %}
+    <div class="row">
+        <div class="card-group my-2 px-3">
+            {% for value in sportsdata.data %}
+            <div class="col-md-4">
+                <div class="card" style="margin:2rem,height=50rem">
+                     <img class="card-img-top" src="{{ value.imageUrl }}" style="height:25rem" />
+                     <div class="card-body">
+                        <h5 class="card-title">{{ value.title }}</h5>
+                        <p class="card-text">{{ value.content }}</p>
+                         <p class="card-text">{{ value.date }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+    
+{% endblock body %}
+
+   
+
